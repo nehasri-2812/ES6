@@ -84,3 +84,16 @@ console.log(user)
 // const product = {id: 101, name: ‘Laptop’, price: 1000, category: ‘Electronics’} 
 // Example Output: 
 // {id: 101, name: ‘Laptop’, discount: 10, inStock: true}
+
+function updateProductInfo(product) {
+  const { id, name } = product;
+  return {
+    id,
+    name,
+    discount: 10,
+    inStock: true
+  };
+}
+
+const product = { id: 101, name: 'Laptop', price: 1000, category: 'Electronics' };
+console.log(updateProductInfo(product));
