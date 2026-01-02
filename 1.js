@@ -88,8 +88,8 @@ console.log(user)
 function updateProductInfo(product) {
   const { id, name } = product;
   return {
-    id,
-    name,
+    userId:id,
+    userName:name,
     discount: 10,
     inStock: true
   };
